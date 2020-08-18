@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        .container1 {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: 2% 5% 2% 5%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 15px 20px;
+            color: white;
+            background-color: black;
+            border: 50%;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .panel-group {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        q {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        li {
+            color: white;
+        }
+
+        .row.content {
+            height: 550px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* On small screens, set height to 'auto' for the grid */
+
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Basic Syntax</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader">
+    </div>
+    <!-- preloader end -->
+    <br>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#zzzzzzzzzDown" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float: right;"><span>&#8595;</span></a>
+    <div class="container1">
+        <h2 id="Top" >Search Topic</h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search.." style="font-size: 16px;">
+        <div id="myDIV">
+            <br>
+            <br>
+            <header>3.Functions Call
+                </header>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/BountifulSorrowfulPrinter?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                    </div>
+                    <div class="panel panel-body">
+                        In the above given program the pow() function is used to call the power function.
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel panel-default"> 
+                    <div class="panel panel-body">
+                        <pre>Function Calls
+A function call is an expression of the same type as the
+ function and whose value corresponds to the return value.
+ The return value is commonly passed to a suitable variable.
+Example: y = pow( x, 3.0);
+In this example the function pow()is first called using the arguments x and 3.0, and
+the result, the power x3, is assigned to y.
+As the function call represents a value, other operations are also possible. Thus, the
+function pow() can be used to perform calculations for double values.
+Example: cout &lt;&lt; 2.0 + pow( 5.0, x);
+This expression first adds the number 2.0 to the return value of pow(5.0,x), then
+outputs the result using cout.
+Any expression can be passed to a function as an argument, such as a constant or an
+arithmetical expression. However,
+it is important that the types of the arguments correspond to those expected by the function.
+The compiler refers to the prototype to check that the function has been called correctly. 
+If the argument type does not match exactly to the type defined in the prototype,
+the compiler performs type conversion, if possible.
+Example: y = pow( x, 3); // also ok!
+The value 3 of type int is passed to the function as a second argument. But since the
+function expects a double value, the compiler will perform type conversion from int
+to double.
+If a function is called with the wrong number of arguments, or if type conversion
+proves impossible, the compiler generates an error message. This allows you to recognize
+and correct errors caused by calling functions at the development stage instead of causing
+runtime errors.
+Example: float x = pow(3.0 + 4.7); // Error!
+The compiler recognizes that the number of arguments is incorrect. In addition, the
+compiler will issue a warning, since a double, i.e. the return value of pow(), is assigned
+to a float type variable.
+                        </pre>
+                </div>
+            </div>
+
+                        
+            </div>
+            
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel panel-head">
+                    TYPE void FOR FUNCTION
+                </div>
+                <div class="panel panel-body">
+                    <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit-32?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe> 
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel panel-body">
+                    <pre>Functions without Return Value
+You can also write functions that perform a certain action but do not return a value to
+the function that called them. The type void is available for functions of this type,
+which are also referred to as procedures in other programming languages.
+Example: void srand( unsigned int seed );
+The standard function srand() initializes an algorithm that generates random numbers.
+Since the function does not return a value, it is of type void. An unsigned value
+is passed to the function as an argument to seed the random number generator. The
+value is used to create a series of random numbers.
+ Functions without Arguments
+If a function does not expect an argument, the function prototype must be declared as
+void or the braces following the function name must be left empty.
+Example: int rand( void ); // or int rand();
+The standard function rand() is called without any arguments and returns a random
+number between 0 and 32767. A series of random numbers can be generated by repeating
+the function call.
+ Usage of srand() and rand()
+The function prototypes for srand() and rand() can be found in both the cstdlib
+and stdlib.h header files.
+Calling the function rand() without previously having called srand() creates the
+same sequence of numbers as if the following statement would have been proceeded:
+srand(1);
+If you want to avoid generating the same sequence of random numbers whenever the
+program is executed, you must call srand() with a different value for the argument
+whenever the program is run.
+It is common to use the current time to initialize a random number generator. See
+Chapter 6 for an example of this technique.
+                    </pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Top" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float:right;" id="Down"><span>&#8593;</span>
+    </a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                        <h3 class="text-white">Subscribe Now</h3>
+                        <form action="#">
+                            <div class="input-wrapper">
+                                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." style="font-size: 16px;">
+                                <button type="submit" value="send" class="btn btn-primary">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">ABES Institute of Technology,Ghaziabad,201009</li>
+                            <li class="mb-2">+91 8882786536</li>
+                            <li class="mb-2">+91 7380394727</li>
+                            <li class="mb-2">codingriders.com@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COMPANY</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">LINKS</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+                            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+                            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">RECOMMEND</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © CODING RIDERS</p>
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://facebook.com/codingriders"><i class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://twitter.com/codingriders"><i class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://instagram.com/codingriders"><i class="ti-instagram text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

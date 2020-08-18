@@ -1,0 +1,48 @@
+.container {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+header{
+  font-size: 30px;
+  padding:15px 20px;
+  color: white;
+  background-color: black;
+  border: 50%;
+}
+p
+{
+font-size: 20px;
+}
+.panel-group{
+  text-align: left;
+ font-size: 17px;
+}
+q{
+  text-align: left;
+  font-size: 17px;
+}
+li{
+  color: white;
+}
+footer{
+  text-align: center;
+  font-size: 25px;
+  padding: 15px 20px;
+  color: white;
+  background-color: black;
+}
+.row.content {height: 550px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;}
+}

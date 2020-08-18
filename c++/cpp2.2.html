@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        .container1 {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: 2% 5% 2% 5%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 15px 20px;
+            color: white;
+            background-color: black;
+            border: 50%;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .panel-group {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        q {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        li {
+            color: white;
+        }
+
+        .row.content {
+            height: 550px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* On small screens, set height to 'auto' for the grid */
+
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Basic Syntax</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader">
+    </div>
+    <!-- preloader end -->
+    <br>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Down" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float: right;"><span>&#8595;</span></a>
+    <div class="container1">
+        <h2 id="Top" >Search Topic</h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search.." style="font-size: 16px;">
+        <div id="myDIV">
+            <br>
+            <br>
+            <header>2.Fundamental Types Constants, and Variables</header>
+           
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        Arithmetic types
+                    </div>
+                    <div class="panel panel-body">
+                        <img src="img/cpp2.2.1.PNG" alt="image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        Floating-Point Types <br>
+                        Numbers with a fraction part are indicated by a decimal point in C++ and are referred to
+                        as floating-point numbers. In contrast to integers, floating-point numbers must be stored
+                        to a preset accuracy. The following three types are available for calculations involving
+                        floating-point numbers: <br>
+                        float for simple accuracy <br>
+                        double for double accuracy <br>
+                        long double for high accuracy <br>
+                        The value range and accuracy of a type are derived from the amount of memory allocated
+                        and the internal representation of the type. <br>
+                        Accuracy is expressed in decimal places. This means that “six decimal places” allows a
+                        programmer to store two floating-point numbers that differ within the first six decimal
+                        places as separate numbers. In reverse, there is no guarantee that the figures 12.3456 and
+                        12.34561 will be distinguished when working to a accuracy of six decimal places. And
+                        remember, it is not a question of the position of the decimal point, but merely of the
+                        numerical sequence. <br>
+                        If it is important for your program to display floating-point numbers with an accuracy
+                        supported by a particular machine, you should refer to the values defined in the cfloat
+                        header file. <br>
+                        Readers interested in additional material on this subject should refer to the Appendix,
+                        which contains a section on the representation of binary numbers on computers for both
+                        integers and floating-point numbers.<br>
+                         The sizeof Operator <br>
+                        The amount of memory needed to store an object of a certain type can be ascertained
+                        using the sizeof operator: <br>
+                        sizeof(name) <br>
+                        yields the size of an object in bytes, and the parameter name indicates the object type or
+                        the object itself. For example, sizeof(int)represents a value of 2 or 4 depending on
+                        the machine. In contrast, sizeof(float) will always equal 4. <br>
+                         Classification <br>
+                        The fundamental types in C++ are integer types, floating-point types, and the void type.
+                        The types used for integers and floating-point numbers are collectively referred to as
+                        arithmetic types, as arithmetic operators are defined for them.  <br>
+                        The void type is used for expressions that do not represent a value. A function call
+                        can thus take a void type. 
+                    <div class="panel panel-heading">
+                        Examples for integral constants
+                    <div class="panel panel-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Decimal</th>
+                                        <th>Octal
+                                        </th>
+                                        <th>
+                                            Hexadecimal
+                                        </th>
+                                        <th>
+                                            Type
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>020</td>
+                                        <td>0x10</td>
+                                        <td>int</td>
+                                    </tr>
+                                    <tr>
+                                       <td>255</td>
+                                       <td>0377</td>
+                                       <td>OXff</td>
+                                       <td>int</td>
+                                   </tr>
+                                   <tr>
+                                       <td>32767</td>
+                                       <td>077777</td>
+                                       <td>0x7FFF</td>
+                                       <td>int</td>
+                                   </tr>
+                                   <br>
+                                   <tr>
+                                       <td>32768U</td>
+                                       <td>0100000U</td>
+                                       <td>0x8000U</td>
+                                       <td>unsigned int</td>
+                                   </tr>
+                                   <br>
+                                   <tr>
+                                       <td>100000</td>
+                                       <td>0303240</td>
+                                       <td>0x186A0</td>
+                                       <td>int (32 bit-)
+                                           long (16 bit-
+                                            CPU)</td>
+                                   </tr><br>
+                                   <tr>
+                                       <td>10L</td>
+                                       <td>012L</td>
+                                       <td>0xAL</td>
+                                       <td>long</td>
+                                   </tr>
+                                   <br>
+                                   <tr>
+                                       <td>27UL</td>
+                                       <td>033UL</td>
+                                       <td>0x1bUL</td>
+                                       <td>unsigned long</td>
+                                   </tr>
+                                   <tr>
+                                       <td>2147483648</td>
+                                       <td>020000000000</td>
+                                       <td>0x80000000</td>
+                                       <td>unsigned long</td>
+                                   </tr>
+
+                                </tbody>
+                            </table>
+                       </div>
+                    </div>
+                    </div>
+                    </div>
+                    <p>sample program</p>
+                    <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit22?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                </div>
+            </div>
+
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        The boolean keywords true and false, a number, a character, or a character sequence
+                        (string) are all constants, which are also referred to as a literals. Constants can thus be
+                        subdivided into <br>
+                        ■ boolean constants <br>
+                        ■ numerical constants <br>
+                        ■ character constants <br>
+                        ■ string constants. <br>
+                        Every constant represents a value and thus a type—as does every expression in C++. The
+                        type is defined by the way the constant is written. <br>
+                        <mark> Boolean Constants</mark> <br>
+                        A boolean expression can have two values that are identified by the keywords true and
+                        false. Both constants are of the bool type. They can be used, for example, to set flags
+                        representing just two states. <br>
+                        <mark>Integral Constants</mark> <br>
+                        Integral numerical constants can be represented as simple decimal numbers, octals, or
+                        hexadecimals: <br>
+                        ■ a decimal constant (base 10) begins with a decimal number other than zero, such
+                        as 109 or 987650 <br>
+                        ■ an octal constant (base 8) begins with a leading 0, for example 077 or 01234567 <br>
+                        ■ a hexadecimal constant (base 16) begins with the character pair 0x or 0X, for <br>
+                        example 0x2A0 or 0X4b1C. Hexadecimal numbers can be capitalized or noncapitalized. <br>
+                        Integral constants are normally of type int. If the value of the constant is too large <br>
+                        for the int type, a type capable of representing larger values will be applied. The ranking
+                        for decimal constants is as follows: <br>
+                  
+                    </div>
+                </div>
+            </div>
+        <pre>int, long, unsigned long</pre>
+        <p>You can designate the type of a constant by adding the letter L or l (for long), or U
+            or u (for unsigned). For example,</p>
+        <pre>12L and 12l correspond to the type long
+            12U and 12u correspond to the type unsigned int
+            12UL and 12ul correspond to the type unsigned long</pre>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        Examples 
+                    </div>
+                    <div class="panel panel-body">
+                         <img src="img/cpp2.2.3.PNG" alt="image" class="img-fluid">
+                         <br>
+                         <a href="img/cpp2.3.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to 3<sup>rd</sup></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Top" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float:right;" id="Down"><span>&#8593;</span>
+    </a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                        <h3 class="text-white">Subscribe Now</h3>
+                        <form action="#">
+                            <div class="input-wrapper">
+                                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." style="font-size: 16px;">
+                                <button type="submit" value="send" class="btn btn-primary">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">ABES Institute of Technology,Ghaziabad,201009</li>
+                            <li class="mb-2">+91 8882786536</li>
+                            <li class="mb-2">+91 7380394727</li>
+                            <li class="mb-2">codingriders.com@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COMPANY</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">LINKS</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+                            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+                            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">RECOMMEND</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © CODING RIDERS</p>
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://facebook.com/codingriders"><i class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://twitter.com/codingriders"><i class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://instagram.com/codingriders"><i class="ti-instagram text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

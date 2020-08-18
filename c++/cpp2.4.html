@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        .container1 {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: 2% 5% 2% 5%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 15px 20px;
+            color: white;
+            background-color: black;
+            border: 50%;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .panel-group {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        q {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        li {
+            color: white;
+        }
+
+        .row.content {
+            height: 550px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* On small screens, set height to 'auto' for the grid */
+
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Basic Syntax</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader">
+    </div>
+    <!-- preloader end -->
+    <br>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Down" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float: right;"><span>&#8595;</span></a>
+    <div class="container1">
+        <h2 id="Top" >Search Topic</h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search.." style="font-size: 16px;">
+        <div id="myDIV">
+            <br>
+            <br>
+            <header>2.Fundamental Types Constants, and Variables</header>
+           
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel -panel-heading">
+                        <img src="img/cpp2.4.PNG" alt="image" class="img-fluid">
+                    </div>
+              </div>
+              <div class="panel-group">
+                <p>Examples for names</p>  
+                <pre>
+                    valid:
+                    a US us VOID
+                    _var SetTextColor
+                    B12 top_of_window
+                    a_very_long_name123467890
+                    invalid:
+                    goto 586_cpu object-oriented
+                    US$ true écu
+                  </pre>
+              </div>
+              <div class="panel panel-heading">
+                Valid Names <br>
+                Within a program names are used to designate variables and functions. The following <br>
+                rules apply when creating names, which are also known as identifiers: ■ a name contains a series of letters, numbers, or underscore characters ( _ ). German umlauts and accented letters are invalid. C++ is case sensitive; that is,
+                upper- and lowercase letters are different. <br>
+                ■ the first character must be a letter or underscore <br>
+                ■ there are no restrictions on the length of a name and all the characters in the
+                name are significant <br>
+                ■ C++ keywords are reserved and cannot be used as names. <br>
+                The opposite page shows C++ keywords and some examples of valid and invalid names.
+                The C++ compiler uses internal names that begin with one or two underscores followed by a capital letter. To avoid confusion with these names, avoid use of the underscore at the beginning of a name.
+                Under normal circumstances the linker only evaluates a set number of characters, for
+                example, the first 8 characters of a name. For this reason names of global objects, such as
+                functions, should be chosen so that the first eight characters are significant.
+                 Conventions <br>
+                In C++ it is standard practice to use small letters for the names of variables and functions. The names of some variables tend to be associated with a specific use.
+                EXAMPLES: <br>
+                c, ch for characters
+                i, j, k, l, m, n for integers, in particular indices
+                x, y, z for floating-point numbers <br>
+                To improve the readability of your programs you should choose longer and more selfexplanatory names, such as start_index or startIndex for the first index in a range
+                of index values. <br>
+                In the case of software projects, naming conventions will normally apply. For example, prefixes that indicate the type of the variable may be assigned when naming variables.
+
+              </div>
+              <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit24?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              </div>
+              <div class="panel panel-body">
+                  <pre>
+                Defining Variables
+                A variable must be defined before you can use it in a program. When you define a variable
+                the type is specified and an appropriate amount of memory reserved. 
+                This memory space is addressed by reference to the name of the variable. A simple definition has the
+                following syntax:
+                SYNTAX: typ name1 [name2 ... ];
+                This defines the names of the variables in the list name1 [, name2 ...] as variables
+                of the type type. The parentheses [ ... ] in the syntax description indicate that this
+                part is optional and can be omitted. Thus, one or more variables can be stated within a
+                single definition.
+                EXAMPLES: char c;
+                int i, counter;
+                double x, y, size;
+                In a program, variables can be defined either within the program’s functions or outside of them.
+                 This has the following effect:
+                ■ a variable defined outside of each function is global, i.e. it can be used by all functions
+                ■ a variable defined within a function is local, i.e. it can be used only in that function.
+                Local variables are normally defined immediately after the first brace—for example at
+                the beginning of a function. However, they can be defined wherever a statement is permitted.
+                 This means that variables can be defined immediately before they are used by the
+                program.
+                 Initialization
+                A variable can be initialized, i.e. a value can be assigned to the variable, during its definition.
+                 Initialization is achieved by placing the following immediately after the name of
+                the variable:
+
+                ■ an equals sign ( = ) and an initial value for the variable or
+                ■ round brackets containing the value of the variable.
+                EXAMPLES: char c = 'a';
+                float x(1.875);
+                Any global variables not explicitly initialized default to zero. In contrast, the initial
+                value for any local variables that you fail to initialize will have an undefined initial value.
+            </pre>
+            <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit-25?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+              </div>
+              <pre>
+                Constant Objects
+                The const keyword is used to create a “read only” object. As an object of this type is
+                constant, it cannot be modified at a later stage and must be initialized during its definition.
+                EXAMPLE: const double pi = 3.1415947;
+                Thus the value of pi cannot be modified by the program. Even a statement such as the
+                following will merely result in an error message:
+                pi = pi + 2.0; // invalid 
+                 Volatile Objects
+                The keyword volatile, which is rarely used, creates variables that can be modified not
+                only by the program but also by other programs and external events. 
+                Events can be initiated by interrupts or by a hardware clock, for example.
+                EXAMPLE: volatile unsigned long clock_ticks;
+                Even if the program itself does not modify the variable, the compiler must assume that
+                the value of the variable has changed since it was last accessed. The compiler therefore
+                creates machine code to read the value of the variable whenever it is accessed instead of
+                repeatedly using a value that has been read at a prior stage.
+                It is also possible to combine the keywords const and volatile when declaring a
+                variable.
+                EXAMPLE: volatile const unsigned time_to_live;
+                Based on this declaration, the variable time_to_live cannot be modified by the program but by external events.
+              </pre>
+        </div>
+        <div class="progress" style="height:30px;">
+            <div class="progress-bar" style="width:100%;">100%completed module 2 of c++</div>
+          </div>
+    </div>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Top" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float:right;" id="Down"><span>&#8593;</span>
+    </a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                        <h3 class="text-white">Subscribe Now</h3>
+                        <form action="#">
+                            <div class="input-wrapper">
+                                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." style="font-size: 16px;">
+                                <button type="submit" value="send" class="btn btn-primary">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">ABES Institute of Technology,Ghaziabad,201009</li>
+                            <li class="mb-2">+91 8882786536</li>
+                            <li class="mb-2">+91 7380394727</li>
+                            <li class="mb-2">codingriders.com@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COMPANY</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">LINKS</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+                            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+                            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">RECOMMEND</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © CODING RIDERS</p>
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://facebook.com/codingriders"><i class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://twitter.com/codingriders"><i class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://instagram.com/codingriders"><i class="ti-instagram text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

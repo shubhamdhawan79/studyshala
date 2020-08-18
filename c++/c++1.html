@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        .container1 {
+            border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: 2% 5% 2% 5%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 15px 20px;
+            color: white;
+            background-color: black;
+            border: 50%;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .panel-group {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        q {
+            text-align: left;
+            font-size: 17px;
+        }
+
+        li {
+            color: white;
+        }
+
+        .row.content {
+            height: 550px
+        }
+        /* Set gray background color and 100% height */
+
+        .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+        /* On small screens, set height to 'auto' for the grid */
+
+        @media screen and (max-width: 767px) {
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Basic Syntax</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="plugins/animate/animate.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <!-- venobox popup -->
+    <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader">
+    </div>
+    <!-- preloader end -->
+    <br>
+      <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Down" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float: right;"><span>&#8595;</span></a>
+
+
+
+
+        </div>
+        <div class="container1">
+        <h2 id="Top" >Search Topic </h2>
+        <input class="form-control" id="myInput" type="text" placeholder="Search.." style="font-size: 16px;">
+        <div id="myDIV">
+            <br>
+            <br>
+            <header>Functions of c++</header>
+            <p><q>This chapter describes the fundamental characteristics of the objectoriented C++ programming language. In addition, you will be introduced
+                to the steps necessary for creating a fully functional C++ program.The
+                examples provided will help you retrace these steps and also
+                demonstrate the basic structure of a C++ program.</q></p>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-body">
+                        <img src="img/cpp1.png" alt="image">
+                    </div>
+                    <div class="panel panel-body">
+                       <p>  The C++ programming language was created by Bjarne Stroustrup and his team at Bell
+                        Laboratories (AT&T, USA) to help implement simulation projects in an object-oriented and efficient way. The earliest versions, which were originally referred to as “C
+                        with classes,” date back to 1980. As the name C++ implies, C++ was derived from the C
+                        programming language: ++ is the increment operator in C.
+                        As early as 1989 an ANSI Committee (American National Standards Institute) was
+                        founded to standardize the C++ programming language. The aim was to have as many
+                        compiler vendors and software developers as possible agree on a unified description of
+                        the language in order to avoid the confusion caused by a variety of dialects.
+                        In 1998 the ISO (International Organization for Standardization) approved a standard for C++ (ISO/IEC 14882).
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">Characteristics of C++
+                    </div>
+                    <div class="panel panel-body">
+                       <p>C++ is not a purely object-oriented language but a hybrid that contains the functionality
+                        of the C programming language. This means that you have all the features that are available in C:</p>
+                        <br>
+                           1- universally usable modular programs
+                          <br>
+                          2- efficient, close to the machine programming
+                          <br> 
+                          3- portable programs for various platforms
+                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">The large quantities of existing C source code can also be used in C++ programs.
+                        C++ supports the concepts of object-oriented programming (or OOP for short),
+                        which are:
+                    </div>
+                    <div class="panel panel-body">
+                        1-data abstraction, that is, the creation of classes to describe objects <br>
+                        2-data encapsulation for controlled access to object data <br>
+                        3-inheritance by creating derived classes (including multiple derived classes) <br>
+                        4-polymorphism (Greek for multiform), that is, the implementation of instructions <br>
+                        that can have varying effects during program execution. <br>
+                        Various language elements were added to C++, such as references, templates, and exception handling. Even though these elements of the language are not strictly object-oriented programming features, they are important for efficient program implementation.    
+                    
+                    </div>
+            </div>
+            <br>
+            
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">Various language elements were added to C++, such as references, templates, and exception handling. Even though these elements of the language are not strictly object-oriented programming features, they are important for efficient program implementation.
+                    </div>
+                    <div class="panel panel-body">
+
+                           <img src="img/cpp1.2.PNG" alt="image">
+                </div>
+            </div>
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">The following three steps are required to create and translate a C++ program:
+                    </div>
+                    <div class="panel panel-body">
+                        1. First, a text editor is used to save the C++ program in a text file. In other words,
+                        the source code is saved to a source file. In larger projects the programmer will normally use modular programming. This means that the source code will be stored in
+                        several source files that are edited and translated separately. <br>
+                        2. The source file is put through a compiler for translation. If everything works as
+                        planned, an object file made up of machine code is created. The object file is also
+                        referred to as a module. <br>
+                        3. Finally, the linker combines the object file with other modules to form an executable file. These further modules contain functions from standard libraries or
+                        parts of the program that have been compiled previously.    
+                    
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">Note:-
+                    </div>
+                    <div class="panel panel-body">
+                        If the source file contains just one syntax error, the compiler will report an error. Additional error
+                        messages may be shown if the compiler attempts to continue despite having found an error. So when
+                        you are troubleshooting a program, be sure to start with the first error shown.
+
+                        <div class="panel panel-body">
+                            <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit1?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">Structure of function main()
+                    </div>
+                    <div class="panel panel-body">
+                        <img src="img/cpp1.3.PNG" alt="image">
+                    </div>
+                    <div class="panel panel-body">
+                        A C++ program is made up of objects with their accompanying member functions and
+global functions, which do not belong to any single particular class. Each function fulfills
+its own particular task and can also call other functions. You can create functions yourself or use ready-made functions from the standard library. You will always need to write
+the global function main() yourself since it has a special role to play; in fact it is the
+main program. <br>
+The short programming example on the opposite page demonstrates two of the most
+important elements of a C++ program. The program contains only the function main()
+and displays a message. <br>
+The first line begins with the number symbol, #, which indicates that the line is
+intended for the preprocessor. The preprocessor is just one step in the first translation
+phase and no object code is created at this time. You can type <br>
+#include &gt;filename&gt; <br>
+to have the preprocessor copy the quoted file to this position in the source code. This
+allows the program access to all the information contained in the header file. The header
+file iostream comprises conventions for input and output streams. The word stream
+indicates that the information involved will be treated as a flow of data.
+Predefined names in C++ are to be found in the std (standard) namespace. The
+using directive allows direct access to the names of the std namespace.
+Program execution begins with the first instruction in function main(), and this is
+why each C++ program must have a main function. The structure of the function is
+shown on the opposite page. Apart from the fact that the name cannot be changed, this
+function’s structure is not different from that of any other C++ function.
+In our example the function main() contains two statements. The first statement
+cout &lt;&lt; "Enjoy yourself with C++!" &lt;&lt; endl; <br>
+outputs the text string Enjoy yourself with C++! on the screen. The name cout
+(console output) designates an object responsible for output. <br>
+The two less-than symbols, &lt;&lt;, indicate that characters are being “pushed” to the output stream. Finally endl (end of line) causes a line feed. The statement
+return 0;  <br>
+terminates the function main() and also the program, returning a value of 0 as an exit
+code to the calling program. It is standard practice to use the exit code 0 to indicate that
+a program has terminated correctly. <br>
+Note that statements are followed by a semicolon. By the way, the shortest statement
+comprises only a semicolon and does nothing.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">A C++ program with several functions
+                    </div>
+                    <div class="panel panel-body">
+
+                        <iframe height="400px" width="100%" src="https://repl.it/@RohanTyagi/unit12?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+                    </div>
+                </div>
+            </div>
+            
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <a href="start page of c++.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Go to Start</a>
+    <a href="#Top" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".3" style="float:right;" id="Down"><span>&#8593;</span>
+    </a>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <!-- newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+                        <h3 class="text-white">Subscribe Now</h3>
+                        <form action="#">
+                            <div class="input-wrapper">
+                                <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." style="font-size: 16px;">
+                                <button type="submit" value="send" class="btn btn-primary">Join</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer content -->
+        <div class="footer bg-footer section border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                        <!-- logo -->
+                        <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">ABES Institute of Technology,Ghaziabad,201009</li>
+                            <li class="mb-2">+91 8882786536</li>
+                            <li class="mb-2">+91 7380394727</li>
+                            <li class="mb-2">codingriders.com@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- company -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">COMPANY</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+                            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+                            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+                            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                    <!-- links -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">LINKS</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+                            <li class="mb-3"><a class="text-color" href="event.html">Events</a></li>
+                            <li class="mb-3"><a class="text-color" href="gallary.html">Gallary</a></li>
+                            <li class="mb-3"><a class="text-color" href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">SUPPORT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">Forums</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Documentation</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Language</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">Release Status</a></li>
+                        </ul>
+                    </div>
+                    <!-- support -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                        <h4 class="text-white mb-5">RECOMMEND</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a class="text-color" href="#">WordPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">LearnPress</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">WooCommerce</a></li>
+                            <li class="mb-3"><a class="text-color" href="#">bbPress</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright py-4 bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 text-sm-left text-center">
+                        <p class="mb-0">Copyright
+                            <script>
+                                var CurrentYear = new Date().getFullYear()
+                                document.write(CurrentYear)
+                            </script>
+                            © CODING RIDERS</p>
+                    </div>
+                    <div class="col-sm-5 text-sm-right text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://facebook.com/codingriders"><i class="ti-facebook text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://twitter.com/codingriders"><i class="ti-twitter-alt text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
+                            <li class="list-inline-item"><a class="d-inline-block p-2" href="http://instagram.com/codingriders"><i class="ti-instagram text-primary"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
